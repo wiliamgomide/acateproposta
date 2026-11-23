@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta Comercial Exclusiva | Ocaeté Studio Arquitetura & Construção</title>
+    
+    <!-- Google Fonts: Cormorant Garamond (Editorial/Luxo) & Plus Jakarta Sans (Moderna/Limpa) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        stone: {
+                            50: '#FAF9F6',
+                            100: '#F3F1EC',
+                            200: '#E6E2D8',
+                            300: '#D4CEC0',
+                            800: '#292826',
+                            900: '#181716',
+                            950: '#0F0E0E',
+                        },
+                        gold: {
+                            400: '#D4AF37',
+                            500: '#C59B27',
+                            600: '#A67F1A',
+                        },
+                        emerald: {
+                            800: '#065F46',
+                            900: '#064E3B',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Estilos customizados sutis para acabamento editorial */
+        body {
+            background-color: #FAF9F6;
+            color: #181716;
+            -webkit-font-smoothing: antialiased;
+        }
+        
+        .gold-gradient-border {
+            background: linear-gradient(135deg, #D4AF37 0%, #F3E5AB 50%, #A67F1A 100%);
+        }
+
+        .editorial-shadow {
+            box-shadow: 0 20px 40px -15px rgba(24, 23, 22, 0.08);
+        }
+
+        .dark-card-shadow {
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+        }
+
+        /* Animação suave de entrada */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(16px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate-fade-up {
+            animation: fadeUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+    </style>
+</head>
+<body class="font-sans selection:bg-stone-900 selection:text-stone-50 overflow-x-hidden">
+
+    <!-- Barra Superior Discreta de Identificação -->
+    <nav class="w-full border-b border-stone-200/80 bg-stone-50/90 backdrop-blur-md sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-lg bg-stone-900 text-stone-50 flex items-center justify-center font-serif text-lg font-semibold tracking-wider">
+                    O
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-serif text-lg font-semibold tracking-wide text-stone-900 leading-none">OCAETÉ STUDIO</span>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-stone-500 mt-0.5">Arquitetura | Construção</span>
+                </div>
+            </div>
+            <div class="hidden sm:flex items-center gap-6 text-xs uppercase tracking-widest text-stone-500 font-medium">
+                <a href="#diagnostico" class="hover:text-stone-900 transition-colors">Diagnóstico</a>
+                <a href="#transformacao" class="hover:text-stone-900 transition-colors">O Novo Site</a>
+                <a href="#investimento" class="hover:text-stone-900 transition-colors">Black November</a>
+            </div>
+            <a href="#investimento" class="text-xs font-semibold uppercase tracking-wider px-4 py-2 rounded-lg bg-stone-900 text-stone-50 hover:bg-stone-800 transition-all">
+                Ver Condição
+            </a>
+        </div>
+    </nav>
+
+    <!-- 1. CABEÇALHO EXCLUSIVO (HERO) -->
+    <header class="relative pt-14 pb-20 sm:pt-20 sm:pb-28 px-4 sm:px-6 lg:px-8 border-b border-stone-200/70 overflow-hidden">
+        <!-- Detalhe arquitetônico geométrico de fundo -->
+        <div class="absolute inset-0 pointer-events-none opacity-[0.03]" style="background-image: radial-gradient(#181716 1px, transparent 1px); background-size: 28px 28px;"></div>
+        
+        <div class="max-w-4xl mx-auto text-center relative z-10 animate-fade-up">
+            <!-- Selo discreto no topo -->
+            <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-stone-900 text-stone-100 border border-stone-700/80 mb-8 shadow-sm">
+                <span class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
+                <span class="text-[11px] sm:text-xs font-medium tracking-[0.18em] uppercase text-stone-200">
+                    PROPOSTA COMERCIAL EXCLUSIVA • CONDIÇÃO BLACK NOVEMBER
+                </span>
+            </div>
+
+            <!-- Título principal -->
+            <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-semibold text-stone-900 leading-[1.12] tracking-tight mb-6">
+                Preparada especialmente para o <br class="hidden sm:block">
+                <span class="italic font-normal text-stone-800">Ocaeté Studio</span> Arquitetura <span class="text-gold-600 font-light">|</span> Construção
+            </h1>
+
+            <!-- Subtítulo -->
+            <p class="text-base sm:text-xl text-stone-600 font-light max-w-2xl mx-auto leading-relaxed mb-10">
+                Eleve sua presença digital ao mesmo nível de excelência estética e construtiva dos seus projetos.
+            </p>
+
+            <!-- Linha divisória minimalista com referência técnica -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 text-xs text-stone-500 tracking-widest uppercase">
+                <span>Posicionamento Digital High-End</span>
+                <span class="hidden sm:inline text-stone-300">•</span>
+                <span>CAU PJ 401171</span>
+                <span class="hidden sm:inline text-stone-300">•</span>
+                <span>Vitrine Editorial</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. SEÇÃO 1: O DIAGNÓSTICO -->
+    <section id="diagnostico" class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="max-w-3xl mb-14">
+            <span class="text-xs font-semibold uppercase tracking-[0.2em] text-gold-600 block mb-3">01 • O Diagnóstico Atual</span>
+            <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-stone-900 leading-tight mb-4">
+                O que o Ocaeté Studio perde hoje sem um site moderno e atualizado
+            </h2>
+            <p class="text-stone-600 text-base sm:text-lg font-light">
+                Quando um escritório entrega arquitetura e obra de alto padrão, cada ponto de contato comunica valor. Hoje, a ausência de uma plataforma proprietária gera um custo invisível diário:
+            </p>
+        </div>
+
+        <!-- Grid de 4 cards elegantes -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+            
+            <!-- Card 1 -->
+            <div class="group bg-white p-7 sm:p-9 rounded-2xl border border-stone-200/90 editorial-shadow hover:border-stone-400 transition-all duration-300">
+                <div class="w-12 h-12 rounded-xl bg-stone-100 border border-stone-200 flex items-center justify-center text-stone-900 mb-6 group-hover:bg-stone-900 group-hover:text-gold-400 transition-colors">
+                    <i data-lucide="gem" class="w-5 h-5 stroke-[1.75]"></i>
+                </div>
+                <div class="flex items-center justify-between mb-3">
+                    <h3 class="font-serif text-2xl font-semibold text-stone-900">Quebra de Percepção de Luxo</h3>
+                    <span class="text-xs font-mono text-stone-400">01</span>
+                </div>
+                <p class="text-stone-600 text-sm sm:text-base leading-relaxed font-light">
+                    Clientes de alto padrão clicam na bio e caem num <strong class="font-medium text-stone-800">Linktree genérico</strong>, que não faz jus à sofisticação dos projetos, detalhamentos e renders do escritório.
+                </p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="group bg-white p-7 sm:p-9 rounded-2xl border border-stone-200/90 editorial-shadow hover:border-stone-400 transition-all duration-300">
+                <div class="w-12 h-12 rounded-xl bg-stone-100 border border-stone-200 flex items-center justify-center text-stone-900 mb-6 group-hover:bg-stone-900 group-hover:text-gold-400 transition-colors">
+                    <i data-lucide="clock" class="w-5 h-5 stroke-[1.75]"></i>
+                </div>
+                <div class="flex items-center justify-between mb-3">
+                    <h3 class="font-serif text-2xl font-semibold text-stone-900">Perda de Tempo com Perguntas Repetidas</h3>
+                    <span class="text-xs font-mono text-stone-400">02</span>
+                </div>
+                <p class="text-stone-600 text-sm sm:text-base leading-relaxed font-light">
+                    Horas gastas no WhatsApp respondendo dúvidas básicas sobre <strong class="font-medium text-stone-800">escopo (projeto vs. execução de obra)</strong>, prazos e áreas de atendimento antes mesmo de qualificar o cliente.
+                </p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="group bg-white p-7 sm:p-9 rounded-2xl border border-stone-200/90 editorial-shadow hover:border-stone-400 transition-all duration-300">
+                <div class="w-12 h-12 rounded-xl bg-stone-100 border border-stone-200 flex items-center justify-center text-stone-900 mb-6 group-hover:bg-stone-900 group-hover:text-gold-400 transition-colors">
+                    <i data-lucide="moon" class="w-5 h-5 stroke-[1.75]"></i>
+                </div>
+                <div class="flex items-center justify-between mb-3">
+                    <h3 class="font-serif text-2xl font-semibold text-stone-900">Leads Escapando à Noite e Fins de Semana</h3>
+                    <span class="text-xs font-mono text-stone-400">03</span>
+                </div>
+                <p class="text-stone-600 text-sm sm:text-base leading-relaxed font-light">
+                    Casais e investidores pesquisam referências fora do horário comercial e <strong class="font-medium text-stone-800">esfriam</strong> por não encontrarem um canal de briefing estruturado funcionando 24h.
+                </p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="group bg-white p-7 sm:p-9 rounded-2xl border border-stone-200/90 editorial-shadow hover:border-stone-400 transition-all duration-300">
+                <div class="w-12 h-12 rounded-xl bg-stone-100 border border-stone-200 flex items-center justify-center text-stone-900 mb-6 group-hover:bg-stone-900 group-hover:text-gold-400 transition-colors">
+                    <i data-lucide="search-x" class="w-5 h-5 stroke-[1.75]"></i>
+                </div>
+                <div class="flex items-center justify-between mb-3">
+                    <h3 class="font-serif text-2xl font-semibold text-stone-900">Invisibilidade nas Buscas do Google</h3>
+                    <span class="text-xs font-mono text-stone-400">04</span>
+                </div>
+                <p class="text-stone-600 text-sm sm:text-base leading-relaxed font-light">
+                    Quem pesquisa por <strong class="font-medium text-stone-800">"arquitetura e construção de alto padrão"</strong> na região acaba encontrando concorrentes menos qualificados que possuem um site otimizado.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 3. SEÇÃO 2: A TRANSFORMAÇÃO (ANTES VS DEPOIS + 4 PILARES) -->
+    <section id="transformacao" class="py-20 sm:py-28 bg-stone-900 text-stone-50 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            
+            <div class="max-w-3xl mb-14">
+                <span class="text-xs font-semibold uppercase tracking-[0.2em] text-gold-400 block mb-3">02 • A Transformação Digital</span>
+                <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-white leading-tight mb-4">
+                    O que vocês vão ganhar com o Novo Site Oficial
+                </h2>
+                <p class="text-stone-300 text-base sm:text-lg font-light">
+                    Saia da dependência exclusiva das redes sociais e conquiste uma sede digital à altura do portfólio do Ocaeté Studio.
+                </p>
+            </div>
+
+            <!-- Comparativo Visual: Antes vs. Depois -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-14">
+                <!-- Coluna ANTES -->
+                <div class="rounded-2xl bg-stone-950/70 border border-stone-800 p-7 sm:p-9 relative overflow-hidden">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-950/60 border border-red-800/40 text-red-300 text-xs uppercase tracking-wider font-medium mb-6">
+                        <i data-lucide="x-circle" class="w-3.5 h-3.5"></i>
+                        Cenário Atual (Sem Site)
+                    </div>
+                    <ul class="space-y-4 text-stone-400 text-sm sm:text-base">
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-400/80 mt-1">✕</span>
+                            <span>Link na bio comum, igual ao de qualquer prestador iniciante.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-400/80 mt-1">✕</span>
+                            <span>Fotos de obras perdidas no feed cronológico do Instagram.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-400/80 mt-1">✕</span>
+                            <span>Curiosos pedindo orçamento sem entender o padrão do escritório.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-red-400/80 mt-1">✕</span>
+                            <span>Zero relevância orgânica para buscas locais no Google.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Coluna DEPOIS -->
+                <div class="rounded-2xl bg-gradient-to-br from-stone-800/90 to-stone-900 border border-gold-500/40 p-7 sm:p-9 relative overflow-hidden shadow-2xl">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/15 border border-gold-400/40 text-gold-400 text-xs uppercase tracking-wider font-semibold mb-6">
+                        <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                        Novo Site Oficial Ocaeté Studio
+                    </div>
+                    <ul class="space-y-4 text-stone-200 text-sm sm:text-base">
+                        <li class="flex items-start gap-3">
+                            <span class="text-gold-400 mt-1">✓</span>
+                            <span><strong class="text-white font-medium">Impacto visual imediato:</strong> Experiência imersiva que justifica honorários de alto valor.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-gold-400 mt-1">✓</span>
+                            <span><strong class="text-white font-medium">Portfólio curado por categoria:</strong> Residencial, Interiores, Comercial e Execução de Obra.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-gold-400 mt-1">✓</span>
+                            <span><strong class="text-white font-medium">Triagem inteligente:</strong> O cliente já chega no WhatsApp alinhado com sua metodologia.</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-gold-400 mt-1">✓</span>
+                            <span><strong class="text-white font-medium">Credibilidade institucional:</strong> Registro <span class="text-gold-300">CAU PJ 401171</span> em destaque e presença no Google.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 4 Pilares de Ganho Imediato -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <div class="bg-stone-800/50 border border-stone-700/60 rounded-2xl p-6 hover:border-gold-500/40 transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-gold-500/10 text-gold-400 flex items-center justify-center mb-4">
+                        <i data-lucide="book-open" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold text-white mb-2">Vitrine Editorial de Alto Padrão</h3>
+                    <p class="text-stone-300 text-sm font-light leading-relaxed">
+                        Galeria imersiva estilo revista de arquitetura (<em>ArchDaily / Casa Vogue</em>) valorizando cada obra, detalhe construtivo e interior.
+                    </p>
+                </div>
+
+                <div class="bg-stone-800/50 border border-stone-700/60 rounded-2xl p-6 hover:border-gold-500/40 transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-gold-500/10 text-gold-400 flex items-center justify-center mb-4">
+                        <i data-lucide="shield-check" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold text-white mb-2">Filtro de Clientes Qualificados</h3>
+                    <p class="text-stone-300 text-sm font-light leading-relaxed">
+                        Apresentação clara do registro <strong class="text-gold-300 font-medium">CAU PJ 401171</strong> e metodologia de trabalho, atraindo clientes prontos para fechar contratos maiores.
+                    </p>
+                </div>
+
+                <div class="bg-stone-800/50 border border-stone-700/60 rounded-2xl p-6 hover:border-gold-500/40 transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-gold-500/10 text-gold-400 flex items-center justify-center mb-4">
+                        <i data-lucide="message-square-plus" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold text-white mb-2">Atendimento Ágil 24/7</h3>
+                    <p class="text-stone-300 text-sm font-light leading-relaxed">
+                        Botão estratégico de WhatsApp e estrutura pensada para converter visitantes interessados em reuniões de projeto qualificadas.
+                    </p>
+                </div>
+
+                <div class="bg-stone-800/50 border border-stone-700/60 rounded-2xl p-6 hover:border-gold-500/40 transition-colors">
+                    <div class="w-10 h-10 rounded-lg bg-gold-500/10 text-gold-400 flex items-center justify-center mb-4">
+                        <i data-lucide="globe" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-semibold text-white mb-2">Autoridade no Google</h3>
+                    <p class="text-stone-300 text-sm font-light leading-relaxed">
+                        Presença profissional, rápida e 100% responsiva para celulares, tablets e computadores, fortalecendo sua marca na região.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SEÇÃO 3: A OFERTA ESPECIAL DE BLACK NOVEMBER (INVESTIMENTO) -->
+    <section id="investimento" class="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-xs font-semibold uppercase tracking-[0.2em] text-gold-600 block mb-3">03 • Investimento & Condição Especial</span>
+            <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-stone-900 leading-tight mb-4">
+                A Oferta Especial de Black November
+            </h2>
+            <p class="text-stone-600 text-base sm:text-lg font-light">
+                Um investimento único e acessível para transformar o posicionamento digital do Ocaeté Studio ainda este mês.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+            
+            <!-- CARD PRINCIPAL DE DESTAQUE (Criação do Site - 7 colunas) -->
+            <div class="lg:col-span-7 rounded-3xl bg-stone-950 text-stone-50 p-8 sm:p-11 dark-card-shadow border border-stone-800 relative flex flex-col justify-between overflow-hidden">
+                <!-- Brilho sutil dourado no canto -->
+                <div class="absolute -top-24 -right-24 w-64 h-64 bg-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div>
+                    <!-- Selo Dourado/Preto -->
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full gold-gradient-border text-stone-950 text-xs font-bold uppercase tracking-widest mb-7 shadow-md">
+                        <i data-lucide="award" class="w-4 h-4"></i>
+                        CONDIÇÃO ESPECIAL BLACK NOVEMBER
+                    </div>
+
+                    <h3 class="font-serif text-3xl sm:text-4xl font-semibold text-white mb-2">
+                        Criação do Site Profissional Completo
+                    </h3>
+                    <p class="text-stone-400 text-sm uppercase tracking-wider font-medium mb-8">
+                        Pagamento Único • Propriedade 100% do Escritório
+                    </p>
+
+                    <!-- Bloco de Preço -->
+                    <div class="bg-stone-900/90 border border-stone-800 rounded-2xl p-6 mb-8">
+                        <div class="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+                            <span class="text-stone-400 text-base sm:text-lg line-through">
+                                De R$ 990,90
+                            </span>
+                            <span class="inline-block px-2.5 py-0.5 rounded-md bg-emerald-900/80 border border-emerald-700/50 text-emerald-300 text-xs font-semibold">
+                                Economia imediata de R$ 500,00!
+                            </span>
+                        </div>
+                        <div class="mt-2 flex items-baseline gap-2">
+                            <span class="text-stone-300 text-lg sm:text-xl font-light">Por apenas</span>
+                            <span class="font-serif text-5xl sm:text-6xl font-bold text-gold-400 tracking-tight">
+                                R$ 490,90
+                            </span>
+                        </div>
+                        
+                        <!-- Condições de Pagamento e Prazo -->
+                        <div class="mt-4 pt-4 border-t border-stone-800/80 space-y-2 text-xs sm:text-sm text-stone-300">
+                            <div class="flex items-start gap-2">
+                                <span class="text-gold-400 font-bold">•</span>
+                                <span><strong class="text-white font-medium">50% no ato da assinatura</strong> (Pix ou crédito à vista).</span>
+                            </div>
+                            <div class="flex items-start gap-2">
+                                <span class="text-gold-400 font-bold">•</span>
+                                <span><strong class="text-white font-medium">Restante após a entrega:</strong> à vista ou parcelado em até <strong class="text-gold-300 font-medium">3x sem juros</strong> no cartão de crédito.</span>
+                            </div>
+                            <div class="flex items-start gap-2 pt-1">
+                                <i data-lucide="calendar-clock" class="w-4 h-4 text-gold-400 shrink-0 mt-0.5"></i>
+                                <span><strong class="text-white font-medium">Prazo de entrega após assinatura:</strong> 10 dias úteis.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Lista com Checkmarks -->
+                    <div class="space-y-4 mb-8">
+                        <p class="text-xs uppercase tracking-widest text-stone-400 font-semibold">O que está incluso no projeto:</p>
+                        
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-5 h-5 rounded-full bg-gold-500/20 text-gold-400 flex items-center justify-center shrink-0 mt-0.5">
+                                <i data-lucide="check" class="w-3.5 h-3.5 stroke-[2.5]"></i>
+                            </div>
+                            <span class="text-stone-200 text-sm sm:text-base">
+                                <strong class="text-white font-medium">Design editorial personalizado</strong> com as fotos reais e renders do Ocaeté Studio.
+                            </span>
+                        </div>
+
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-5 h-5 rounded-full bg-gold-500/20 text-gold-400 flex items-center justify-center shrink-0 mt-0.5">
+                                <i data-lucide="check" class="w-3.5 h-3.5 stroke-[2.5]"></i>
+                            </div>
+                            <span class="text-stone-200 text-sm sm:text-base">
+                                <strong class="text-white font-medium">Integração direta com WhatsApp</strong> (com mensagem estratégica) e <strong class="text-white font-medium">Google Maps</strong>.
+                            </span>
+                        </div>
+
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-5 h-5 rounded-full bg-gold-500/20 text-gold-400 flex items-center justify-center shrink-0 mt-0.5">
+                                <i data-lucide="check" class="w-3.5 h-3.5 stroke-[2.5]"></i>
+                            </div>
+                            <span class="text-stone-200 text-sm sm:text-base">
+                                <strong class="text-white font-medium">Otimização para celular (100% responsivo)</strong> — experiência impecável no Instagram e Google.
+                            </span>
+                        </div>
+
+                        <div class="flex items-start gap-3.5">
+                            <div class="w-5 h-5 rounded-full bg-gold-500/20 text-gold-400 flex items-center justify-center shrink-0 mt-0.5">
+                                <i data-lucide="check" class="w-3.5 h-3.5 stroke-[2.5]"></i>
+                            </div>
+                            <span class="text-stone-200 text-sm sm:text-base">
+                                <strong class="text-white font-medium">Entrega ágil em 10 dias úteis</strong> após a assinatura do acordo.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Micro rodapé do card principal -->
+                <div class="pt-5 border-t border-stone-800/80 flex items-center justify-between text-xs text-stone-400">
+                    <span>Destaque CAU PJ 401171 incluso</span>
+                    <span class="text-gold-400 font-medium">Vagas limitadas na campanha</span>
+                </div>
+            </div>
+
+            <!-- BLOCO ADICIONAL — PLANO DE MANUTENÇÃO (5 colunas) -->
+            <div class="lg:col-span-5 rounded-3xl bg-white border border-stone-200/90 p-8 sm:p-10 editorial-shadow flex flex-col justify-between">
+                <div>
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-stone-100 border border-stone-200 text-stone-600 text-xs font-semibold uppercase tracking-wider mb-6">
+                        <i data-lucide="layers" class="w-3.5 h-3.5 text-stone-700"></i>
+                        Bloco Adicional • Opcional
+                    </div>
+
+                    <h3 class="font-serif text-2xl sm:text-3xl font-semibold text-stone-900 leading-snug mb-6">
+                        Mantenha seu portfólio sempre atualizado sem dor de cabeça <span class="italic font-normal text-stone-500">(Opcional)</span>
+                    </h3>
+
+                    <!-- Bloco de Preço Mensal -->
+                    <div class="bg-stone-50 border border-stone-200/80 rounded-2xl p-5 mb-7">
+                        <div class="text-stone-400 text-sm line-through">
+                            De R$ 69,90/mês
+                        </div>
+                        <div class="mt-1 flex items-baseline gap-1.5">
+                            <span class="text-stone-600 text-sm">Por apenas</span>
+                            <span class="font-serif text-4xl font-bold text-stone-900">
+                                R$ 39,90
+                            </span>
+                            <span class="text-stone-600 text-sm font-medium">/mês</span>
+                        </div>
+                        <p class="text-xs text-gold-600 font-semibold mt-1.5">
+                            ✓ Valor garantido por 12 meses
+                        </p>
+                    </div>
+
+                    <!-- O que inclui -->
+                    <div class="space-y-4 mb-8">
+                        <p class="text-xs uppercase tracking-widest text-stone-500 font-semibold">O que inclui na evolução mensal:</p>
+                        
+                        <div class="flex items-start gap-3">
+                            <div class="w-5 h-5 rounded-full bg-stone-900 text-stone-50 flex items-center justify-center shrink-0 mt-0.5">
+                                <i data-lucide="check" class="w-3 h-3 stroke-[2.5]"></i>
+                            </div>
+                            <span class="text-stone-700 text-sm leading-relaxed">
+                                <strong class="text-stone-900 font-medium">Atualização mensal</strong> de novas obras, renders e fotos entregues pelo escritório.
+                            </span>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="w-5 h-5 rounded-full bg-stone-900 text-stone-50 flex items-center justify-center shrink-0 mt-0.5">
+                                <i data-lucide="check" class="w-3 h-3 stroke-[2.5]"></i>
+                            </div>
+                            <span class="text-stone-700 text-sm leading-relaxed">
+                                <strong class="text-stone-900 font-medium">Suporte técnico prioritário</strong> diretamente via WhatsApp para ajustes rápidos.
+                            </span>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="w-5 h-5 rounded-full bg-stone-900 text-stone-50 flex items-center justify-center shrink-0 mt-0.5">
+                                <i data-lucide="check" class="w-3 h-3 stroke-[2.5]"></i>
+                            </div>
+                            <span class="text-stone-700 text-sm leading-relaxed">
+                                <strong class="text-stone-900 font-medium">Monitoramento contínuo</strong> para garantir que o site esteja sempre rápido, seguro e no ar.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Seletor Interativo para facilitar a escolha na hora de aprovar -->
+                <div class="pt-5 border-t border-stone-200/80">
+                    <label class="flex items-center justify-between cursor-pointer p-3.5 rounded-xl bg-stone-50 hover:bg-stone-100 border border-stone-200 transition-colors">
+                        <div class="flex items-center gap-3">
+                            <input type="checkbox" id="includeMaintenance" class="w-4 h-4 rounded border-stone-300 text-stone-900 focus:ring-stone-900 accent-stone-900">
+                            <span class="text-xs sm:text-sm font-medium text-stone-800">
+                                Quero incluir o Plano de Manutenção
+                            </span>
+                        </div>
+                        <span class="text-xs font-semibold text-stone-500">+R$ 39,90/mês</span>
+                    </label>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 5. SEÇÃO 4: GARANTIA E FECHAMENTO (CALL TO ACTION) -->
+    <section class="pb-20 sm:pb-28 px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+        <div class="rounded-3xl bg-stone-100 border border-stone-200/90 p-8 sm:p-12 text-center editorial-shadow">
+            
+            <!-- Box de Segurança -->
+            <div class="inline-flex flex-col sm:flex-row items-center gap-3.5 bg-white border border-stone-200 px-6 py-4 rounded-2xl shadow-sm mb-8 max-w-2xl mx-auto">
+                <div class="w-10 h-10 rounded-full bg-emerald-900/10 text-emerald-800 flex items-center justify-center shrink-0">
+                    <i data-lucide="lock" class="w-5 h-5"></i>
+                </div>
+                <p class="text-sm sm:text-base text-stone-800 font-medium text-center sm:text-left leading-snug">
+                    Sem mensalidades obrigatórias no plano de criação. Você paga uma única vez e o site é <span class="underline decoration-gold-500 decoration-2 underline-offset-4 font-semibold">100% seu</span>.
+                </p>
+            </div>
+
+            <h2 class="font-serif text-3xl sm:text-4xl font-semibold text-stone-900 mb-4">
+                Prontos para elevar o padrão digital do Ocaeté Studio?
+            </h2>
+            <p class="text-stone-600 text-sm sm:text-base max-w-xl mx-auto mb-8 font-light">
+                Clique no botão abaixo para confirmar o interesse e garantir os valores promocionais desta proposta diretamente pelo WhatsApp.
+            </p>
+
+            <!-- Botão Principal de Alta Conversão (Verde Esmeralda Elegante com acento sutil) -->
+            <div class="flex flex-col items-center justify-center gap-4">
+                <button 
+                    id="whatsappCtaBtn"
+                    onclick="aprovarPropostaWhatsApp()"
+                    class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 sm:px-10 sm:py-5 rounded-2xl bg-emerald-900 hover:bg-emerald-800 text-white font-semibold text-base sm:text-lg shadow-xl shadow-emerald-950/20 border border-emerald-700/50 transition-all duration-300 transform hover:-translate-y-0.5 cursor-pointer"
+                >
+                    <i data-lucide="message-circle" class="w-6 h-6 text-gold-400"></i>
+                    <span>Aprovar Proposta Black November no WhatsApp</span>
+                </button>
+
+                <!-- Feedback sutil caso queiram copiar o texto da proposta -->
+                <button 
+                    onclick="copiarResumoProposta()"
+                    class="text-xs text-stone-500 hover:text-stone-800 underline underline-offset-4 transition-colors py-1"
+                >
+                    Ou clique aqui para copiar o resumo da condição
+                </button>
+            </div>
+
+            <!-- Toast de confirmação (substitui alert) -->
+            <div id="toastMessage" class="hidden mt-4 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-stone-900 text-stone-50 text-xs font-medium shadow-lg">
+                <i data-lucide="check-circle-2" class="w-4 h-4 text-gold-400"></i>
+                <span id="toastText">Mensagem copiada!</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- RODAPÉ COM AVISO DE ESCASSEZ ELEGANTE -->
+    <footer class="border-t border-stone-200/80 bg-stone-50 py-10 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto flex flex-col items-center text-center gap-4">
+            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-stone-200/60 text-stone-700 text-xs font-medium">
+                <i data-lucide="hourglass" class="w-3.5 h-3.5 text-gold-600"></i>
+                <span>Condição válida exclusivamente para fechamentos durante a campanha de Black November.</span>
+            </div>
+            
+            <div class="text-xs text-stone-400 tracking-wider uppercase mt-2">
+                Proposta Comercial Personalizada • Ocaeté Studio Arquitetura | Construção • CAU PJ 401171
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts de Interatividade e Ícones -->
+    <script>
+        // Inicializa os ícones Lucide
+        lucide.createIcons();
+
+        // Função para gerar a mensagem personalizada do WhatsApp conforme seleção do cliente
+        function gerarMensagemWhatsApp() {
+            const incluirManutencao = document.getElementById('includeMaintenance').checked;
+            
+            let mensagem = `Olá! Analisei a *Proposta Comercial Exclusiva de Black November* preparada para o *Ocaeté Studio Arquitetura | Construção* e gostaria de aprovar o projeto!\n\n`;
+            mensagem += `✅ *Plano Escolhido:* Criação do Site Profissional Completo (R$ 490,90 — 50% na assinatura e restante na entrega em até 3x sem juros | Prazo: 10 dias úteis)\n`;
+            
+            if (incluirManutencao) {
+                mensagem += `✅ *Adicional:* Plano de Manutenção & Evolução Mensal (R$ 39,90/mês por 12 meses)\n`;
+            } else {
+                mensagem += `ℹ️ *Adicional:* Sem plano mensal no momento (apenas criação única)\n`;
+            }
+            
+            mensagem += `\nComo podemos dar os próximos passos para a assinatura e envio das fotos?`;
+            
+            return mensagem;
+        }
+
+        // Redireciona diretamente para o WhatsApp informado (55 54 99204-9275)
+        function aprovarPropostaWhatsApp() {
+            const telefone = "5554992049275";
+            const textoCodificado = encodeURIComponent(gerarMensagemWhatsApp());
+            const url = `https://wa.me/${telefone}?text=${textoCodificado}`;
+            
+            window.open(url, '_blank', 'noopener,noreferrer');
+        }
+
+        // Função segura para copiar o texto (usando execCommand conforme boas práticas em iFrames)
+        function copiarResumoProposta() {
+            const texto = gerarMensagemWhatsApp();
+            const textarea = document.createElement('textarea');
+            textarea.value = texto;
+            textarea.style.position = 'fixed';
+            textarea.style.opacity = '0';
+            document.body.appendChild(textarea);
+            textarea.select();
+            
+            try {
+                document.execCommand('copy');
+                mostrarToast('Resumo da proposta copiado para a área de transferência!');
+            } catch (err) {
+                mostrarToast('Não foi possível copiar automaticamente.');
+            }
+            
+            document.body.removeChild(textarea);
+        }
+
+        function mostrarToast(msg) {
+            const toast = document.getElementById('toastMessage');
+            const toastText = document.getElementById('toastText');
+            toastText.textContent = msg;
+            toast.classList.remove('hidden');
+            
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 3500);
+        }
+    </script>
+</body>
+</html>
